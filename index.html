@@ -9,15 +9,30 @@
 </head>
 <body>
     <div class="container">
-        <h1>Assignment 2:</h1>
+        <h1>Assignment 2</h1>
+
         <h2>Background:</h2>
-        <p> Background info</p>
-        
+        <p>A dataset released on July 25, 2020 that contains more than 12,000 civilian complaints filed against New York City police officers. Contains complaints from September 1985 to January 2020, spanning ~35 years. This dataset does not include allegations that investigators concluded did not occur or were deemed unfounded. In this case, it means if the allegation either was not able to have been confirmed to have happened or confirmed to have violated the NYPD’s rule, then it is not included. In addition, the investigation is done by the Civilian Complaint Review Board, which has limited investigative power.</p>
+        <p>Source: “ReadMe _ Civilian Complaints Against New York City Police Officers” from CCRB Complaint Data July 2020</p>
+        <p>Substantiated: The alleged conduct occurred and it violated the rules.<br>
+        Exonerated: The alleged conduct occurred but did not violate the NYPD’s rules.<br>
+        unsubstantiated: The CCRB has fully investigated but could not affirmatively conclude that both the conduct occurred and it broke the rules<br>
+        </p>
+        <p>Source: “CCRB Data Layout Table” from CCRB Complaint Data July 2020</p>
+
+
         <h2>White Hat Visualization</h2>
-        <p> White hat write-up</p>
+        <div class="visualization"></div>
+        <p>The goal is to present an honest and fair interpretation of police complaints across time to see how different kinds of police complaints are reported over time in different communities and by gender in New York City. We want to determine if there is an inequality between races about which communities (based on race) suffer the most amounts of substantiated force used. The visualization shows that the majority of substantiated force complaints have black complainants. This is a consistent trend that can be clearly seen, we also have included a visualization that shows the population proportion in NYC.</p>
 
         <h2>Black Hat Visualization</h2>
-        <p> Black hat write-up</p>
+        <div class="visualization"></div>
+        <p>To try and mislead the viewer about the inequality in force complaints, we have selectively chosen what categories of force complaints to use. In this case, we have selectively chosen to include all types of force complaints aka all 3 categories for complaints: unsubstantiated, substantiated and exonerated. This is to cherry pick data that supports the idea that police brutality against blacks and Hispanics is decreasing while it is increasing for Asians and whites. We do this because when we exclude exonerated (no violation of NYPD rules) force complaints, the percentage trends since 2010 become much ambiguous with no clear trend direction for black and Hispanic.  In addition, we have selectively chosen a specific range of data (2010 - 2020) to cherry pick more of our dataset, this is because when the data is viewed by absolute counts, we see that black and Hispanics force complaints peak around then before starting to fall, by setting our starting point, we create the a clear downward trend (even if it's not very steep). In addition, we have set the y-axis to be percentile change in force complaints per year since 2010. This is the main way we are trying to deceive our audience. By doing this, it gives the appearance that black and Hispanics are decreasing compared to Asians and whites which are increasing despite the actual number of reports showing that black and Hispanic force complaints are still much much higher. In addition, we intentionally leave out the demographic proportions in NYC, so a viewer is not reminded that black and Hispanics are minorities but suffer the most police force incidents. </p>
+
+        <h2>Sources</h2>
+        <a href="https://idl.cs.washington.edu/files/2017-BlackHatVis-DECISIVe.pdf" target="_blank">Black Hat Visualization.pdf</a><br>
+        <a href="https://www.heap.io/blog/how-to-lie-with-data-visualization" target="_blank">How to Lie with Data Visualization</a><br>
+        <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_aggregation.htm" target="_blank">Data Aggregation in Tableau</a>
 
         <h2>Development Process</h2>
         <p> Development process write-up</p>
