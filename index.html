@@ -25,7 +25,7 @@
         <p>Substantiated: The alleged conduct occurred and it violated the rules.<br>
             Exonerated: The alleged conduct occurred but did not violate the NYPD’s rules.<br>
             Unsubstantiated: The CCRB has fully investigated but could not affirmatively conclude that both the conduct
-            occurred and it broke the rules<br>
+            occurred and it broke the rules.<br>
         </p>
         <p>Source: “CCRB Data Layout Table” from CCRB Complaint Data July 2020</p>
 
@@ -42,7 +42,7 @@
         <p><strong>White Hat Write-up:</strong></p>
 
         <p>Our white-hat dashboard shows how the allegation records in ProPublica’s
-            NYPD civilian complaints dataset break down by complainant ethnicity and recorded
+            NYPD civilian complaints dataset can be broken down by complainant ethnicity and recorded
             gender. We include allegations from complaints received between 2000 and 2018,
             regardless of the CCRB finding. Each bar shows a count of allegation records.
             One complaint can contain multiple allegations, so the bars do not count unique
@@ -50,17 +50,17 @@
 
         <p>We use horizontal bars to make the ethnicity labels easier to read and color
             to distinguish recorded gender. Our first version showed all four allegation
-            types side by side, but smaller categories like Offensive Language were hard to
+            types side by side, but smaller categories like "offensive language" were hard to
             see on the shared scale. The dropdown gives each category the full chart width.
             We keep the zero baseline and display the axis because the scale can change
             when viewers switch categories. We also keep records with missing demographic
             information visible.</p>
 
         <p>The table below the chart answers a different question: what share of all
-            allegations within each ethnicity group are classified as Force? For example,
-            the dataset contains more Force allegations for Black complainants than for
-            Hispanic complainants (3,959 compared with 1,547), but Force makes up a slightly
-            smaller share of the Black group’s allegations (24.3% compared with 25.5%).
+            allegations within each ethnicity group are classified as "force"? For example,
+            the dataset contains more Force allegations for black complainants than for
+            Hispanic complainants (3,959 compared with 1,547), but "force" makes up a slightly
+            smaller share of the black group’s allegations (24.3% compared with 25.5%).
             The table shows both the numerator and denominator so viewers can see how each
             percentage is calculated. The dropdown changes the bars only.</p>
 
@@ -101,7 +101,7 @@
             Asian and white community. We do this because when we exclude exonerated (no violation of NYPD rules) force
             complaints, the percentage lines become much ambiguous with no clear trend direction for the black and
             Hispanic communities.</p>
-        <p>In addition, we have chosen a specific range of data (2010 - 2020) to cherry pick more of our dataset. This
+        <p>In addition, we have chosen a specific range of data (2010 - 2018) to cherry pick more of our dataset. This
             is because when the data is viewed by absolute counts, we see that force complaints from the black and
             Hispanic community peak around 2010 before starting to fall a little bit. By setting our starting point to
             be 2010, we create a clear downward trend (even if it's not very steep) that we can exploit. </p>
@@ -121,18 +121,23 @@
 
         <h2>Development Process</h2>
         <p>John Du: Contributed to discussion of design for white hat visualization and draft of white hat write-up (~1
-            hr). Designed and created black hat visualization in Tableau (~2 hrs). Wrote write-up for black hat
+            hr). Designed and created black hat visualization in Tableau (~2 hrs). Wrote write-up for black hat. Prepared submission and finalized writeup (~30 minutes) 
             visualization (~1hr). </p>
         <p>Saurav Pandey: Contributed to discussion of design for white hat and black hat visualizations (~1 hr). 
-            Created white hat visualization in Tableau (~2 hrs). Wrote write-up for white hat visualization (~1 hr). </p>
-        <p>Manato Nakatani: I explored the dataset using Tableau by analysing different variables like allegation types. (~30mins)
-            I also implemented index.html and styles.css for the website. (~1hr)</p>
-        <p>The aspects that took the most time were non-coding portions like writing the visualizations, brainstorming,
-            and investigating the dataset. Creating the actual visualization was the aspect that took the second most
+            Created white hat visualization in Tableau (~2 hrs). Wrote write-up for white hat visualization (~1 hr). Created video (~30 minutes) </p>
+        <p>Manato Nakatani: Explored the dataset using Tableau by analysing different variables like allegation types. (~30mins)
+            Implemented index.html and styles.css for the website. (~1hr)</p>
+        <p>The aspects that took the most time were non-coding portions like writing the visualization writeups, brainstorming,
+            and investigating the dataset. In order to actually start making visualizations, we had to first understand what kind of insights could be found in the dataset. This included loading the dataset into Tableau, manual inspection in spreadsheet form and reading the additional documents associated with the dataset.
+            After that we were able to start drafting ideas, making the visualization, writing and setting up the website. Creating the visualizations took ~4 hours, initial investigation and 
+            discussion took ~2 hours and a half. Writing took ~2 hours. Additional coding and boilerplate work took around ~2 hours and a half. All in all, this assignment
+            took 11 people-hours.
+
+            
             amount of time.</p>
         <h2>Extra Credit Features</h2>
         <p>Initially, we had four different bar graphs in our white hat visualization to represent the different types
-            of allegations. However, we realized that the smaller categories like Offensive Language were hard to see
+            of allegations. However, we realized that the smaller categories like "offensive language" were hard to see
             on the shared scale. To fix this, we added a dropdown to give each category the full chart width. This
             allows viewers to see the smaller categories more clearly and compare them to the larger categories. This
             addition also saved us space as we could display all the different types of allegations in a single view.</p>
